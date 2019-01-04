@@ -1,16 +1,16 @@
 package com.company;
 
 public class BubbleSort {
-    public static int[] bubbleSort(int[] arr){
-        for(int n = 0; n < arr.length; n++)
-        {
-            if(arr[n] > arr[n+1])
-            {
-                swap(arr, n, n+1);
-                n = -1;
+
+    public static int[] bubbleSort(int[] testArr){
+        for(int count = 0; count < testArr.length; count++) {
+            for (int n = 0; n < testArr.length - 1; n++) {
+                if (testArr[n] > testArr[n + 1]) {
+                    swap(testArr, n, n + 1);
+                }
             }
         }
-        return arr;
+        return testArr;
     }
 
 
