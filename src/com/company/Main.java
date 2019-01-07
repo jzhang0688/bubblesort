@@ -8,6 +8,7 @@ public class Main {
 		for (int num : testArr)
 			System.out.print(num + " ");
 		System.out.println();
+		int [] before = testArr;
 
 		BubbleSort.bubbleSort(testArr);
 		System.out.print("After: ");
@@ -15,5 +16,9 @@ public class Main {
 			System.out.print(num + " ");
 			System.out.println();
 		}
+		int [] after = testArr;
+		System.out.println(SortingUtils.checkSum(before, after));
+		System.out.println(SortingUtils.isSorted(before));
+
 	}
 }
